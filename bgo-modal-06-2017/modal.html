@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BioGenOuest MoDaL</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <style type="text/css">
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Muli:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Quicksand:400,700,400italic);
+      /*body { font-family: 'Droid Serif'; }*/
+      body { font-family: 'Muli'; }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      li { padding-bottom: 0.5em; }
+
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+
+      .inverse {
+        background: #272822;
+        color: #777872;
+        text-shadow: 0 0 20px #333;
+      }
+      .inverse h1, .inverse h2 {
+        color: #f3f3f3;
+        line-height: 0.8em;
+      }
+
+      .red    { color: #FF4943; }
+      .gray   { color: #787878; }
+      .green  { color: #87A558; }
+      .blue   { color: #41C8F0; }
+      .yellow { color: #DBEC62; }
+      .white  { color: #DBEC62; }
+
+      .left-column {
+        color: #000;
+        width: 40%;
+        height: 92%;
+        float: left;
+      }
+      .left-column h2:last-of-type, .left-column h3:last-child {
+          color: #87A558;
+      }
+      .right-column {
+        width: 60%;
+        float: right;
+        padding-top: 1em;
+      }
+
+      .split-left {
+        width: 47%;
+        float: left;
+        font-size: 90%;
+      }
+
+      .split-right {
+        width: 50%;
+        float: right;
+        font-size: 90%;
+      }
+
+      .split-13 { width: 33%; float: left; font-size: 90%; }
+      .split-23 { display: inline-block; width: 33%; font-size: 90%; }
+      .split-33 { width: 33%; float: right; font-size: 90%; }
+
+      .split-left .remark-code { font-family: 'Ubuntu Mono'; font-size: 70%; }
+      .split-right .remark-code { font-family: 'Ubuntu Mono'; font-size: 70%; }
+
+      .remark-slide-content {
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+      }
+
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+
+class: center, middle
+count: false
+# Projet fédérateur **MoDaL**
+## .blue[*Multiscale Data Links*]
+<br>
+### 22 Juin 2017
+<br>
+### Richard Redon, Christian Barillot, Alban Gaignard
+<br>
+
+
+---
+class: center, middle
+count: false
+# Contexte
+
+---
+background-image: url(fig/angio.jpg)
+---
+# ICAN: IntraCranial ANeurysms
+
+## Un projet de recherche clinique et pré-clinique
+Développer des approches diagnostiques et prédictives de la formation et de la rupture des anévrismes intracrâniens :
+- comprendre les .red[mécanismes physio-pathologiques]
+- comprendre l'.red[impact de la génétique]  (formes familiales)
+
+--
+
+## Une cohorte nationale (&rarr; 1500 patients / an)
+- IRM, angioscan, artériographies (@NeurInfo, SHANOIR)
+- Données clinico-biologiques
+- Séquencages d'exomes
+
+---
+class: center, middle
+count: false
+# Challenges
+
+---
+#Observations bio-médicales multi-échelles
+.left-column[
+
+]
+.right-column[
+.center[![:scale 90%](fig/datasilos_2.png)]
+]
+
+---
+count: false
+#Observations bio-médicales multi-échelles
+.left-column[
+## .red[Enjeux]
+- Silos de données
+- faible inter-opérabilité
+- grande diversité de contenu
+- &ne; vocabulaires, sémantiques
+- collaborations multi-sites, décentralisation
+]
+.right-column[
+.center[![:scale 90%](fig/datasilos_2.png)]
+]
+
+---
+count: false
+#Observations bio-médicales multi-échelles
+.left-column[
+## .red[Enjeux]
+- Silos de données
+- faible inter-opérabilité
+- grande diversité de contenu
+- &ne; vocabulaires, sémantiques
+- collaborations multi-sites, décentralisation
+
+## .green[Décloisonnement !]
+]
+.right-column[
+.center[![:scale 90%](fig/datasilos_2.png)]
+]
+
+
+---
+# Projet fédérateur MoDaL
+## .blue[Objectifs]
+.red[Décloisonner] les **acteurs** et les **ressources** en génomique, imagerie *in-vivo*, *in-vitro* pour envisager l'.red[exploitation algorithmique] (sémantique et statistique) de .red[données hétérogènes].
+
+--
+
+## .green[Résultats attendus]
+1. .red[état des lieux] des acteurs et infrastructures du Grand Ouest,
+2. .red[démonstrateurs] technologiques pour la gestion, l’analyse et la réutilisation de .red[données multi-infrastructures] (imagerie  in-vivo ,  in-vitro , génomique), dans le contexte des anévrismes intracrâniens.
+
+---
+# Platformes spécialisées du Grand Ouest
+
+.split-left[
+### .green[NeurInfo]
+Neuroimagerie, IRM recherche, SHANOIR, analyse d'images à l'échelle "organe" (Rennes)
+
+### .blue[MicroPiCell]
+Bioimagerie, Microscopie, analyse d'images à l'échelle "cellule" (Nantes)
+]
+
+.split-right[
+### .red[GenOuest]
+Infrastructure de calcul et stockage, développement logiciel, virtualisation, environnements virtuels de recherche, portails scientifiques (Rennes)
+
+### .red[BiRD]
+Analyse de données génomiques et développement de pipelines bioinformatiques, infrastructures de calcul et stockage, cloud (Nantes)
+]
+---
+# Infrastructures nationales thématiques
+- Offre de services pour les sciences du vivant
+- Maillage national, réseau de platformes
+- Noeuds nationnaux de grandes infrastructures européennes <br>
+ (Elixir, EuroBioImaging)
+
+
+.split-13[
+### .green[France Life Imaging]
+.center[![:scale 60%](fig/org.png)]
+.center[Imagerie *in vivo*]
+]
+
+.split-23[
+### .blue[France Bio Imaging]
+.center[![:scale 60%](fig/cell.png)]
+.center[Imagerie *in vitro*]
+]
+
+.split-33[
+### .red[France Bio Informatics]
+.center[![:scale 60%](fig/gen.png)]
+.center[Bioinformatique]
+]
+
+---
+# Impulser une dynamique inter-régionale
+.split-left[
+### .green[Partenaires] déjà identifiés
+- Neuro-Radiologie CHU de Nantes
+- Institut du Thorax
+- LS2N
+- Inria - IRISA
+
+### .blue[Projets] connexes
+- CeSGO (CPER, BioGenOuest)
+- SyMeTRIC (Région Pays de la Loire)
+- Griote (Région Pays de la Loire)
+- BioDataRing (BioGenOuest)
+]
+.split-right[
+### Fédérer une large .green[communauté]
+- Recherche .red[translationnelle]
+- Phénotypage haut débit en biologie .red[végétale]
+- Métagénomique et données satellitaires en biologie .red[marine]
+
+### .blue[Projets] à venir
+- Post-doctorat ICAN (biomarqueurs d'imagerie vasculaire)
+- Post-doctorat Inria-IRISA
+- Thèse Inria-Inserm (plan France Médecine Génomique 2025)
+]
+
+---
+class: middle, center
+# Questions ?
+
+<br>
+<br>
+
+[richard.redon@univ-nantes.fr](mailto:richard.redon@univ-nantes.fr)
+
+[christian.barillot@irisa.fr](mailto:christian.barillot@irisa.fr)
+
+[alban.gaignard@univ-nantes.fr](mailto:alban.gaignard@univ-nantes.fr)
+
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+    remark.macros.scale = function (percentage) {
+            var url = this;
+            return '<img src="' + url + '" style="width: ' + percentage + '" />';
+    };
+      var slideshow = remark.create({
+              countIncrementalSlides: false
+              });
+    </script>
+  </body>
+</html>
