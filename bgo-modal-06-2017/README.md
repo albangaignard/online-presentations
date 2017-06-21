@@ -1,3 +1,3 @@
 
 # Online presentation 
-[slides](https://htmlpreview.github.io/?https://github.com/albangaignard/online-presentations/raw/master/bgo-modal-06-2017/modal.html)
+[slides](https://htmlpreview.github.io/?https://raw.githubusercontent.com/albangaignard/online-presentations/master/bgo-modal-06-2017/modal.html)
